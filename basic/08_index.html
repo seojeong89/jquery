@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>map 메서드</title>
+    <script src="/jquery-3.5.1.js"></script>
+  </head>
+  <body></body>
+
+  <script>
+    $(function () {
+      var city = ["서울", "대구", "대전", "부산"];
+
+      var newcity = $.map(city, function (value, index) {
+        if (index < 2) {
+          return value;
+        }
+      });
+      console.log(newcity.toString());
+    });
+  </script>
+</html>

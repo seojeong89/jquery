@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>toggleClass 메서드</title>
+    <script src="/jquery-3.5.1.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      #m2 {
+        text-align: center;
+      }
+      .box {
+        border-bottom: 2px solid #ccc;
+        text-align: center;
+        padding: 20px;
+        margin-bottom: 10px;
+      }
+      #m2 div {
+        width: 120px;
+        height: 60px;
+        line-height: 60px;
+        display: inline-block;
+        border: 2px solid #ff6600;
+        cursor: pointer;
+      }
+      #m2 div on {
+        background: #ff6600;
+        color: #fff;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="m1">
+      <div class="box">jQuery</div>
+    </div>
+
+    <div id="m2">
+      <div>html</div>
+      <div>css</div>
+      <div>javascript</div>
+    </div>
+  </body>
+
+  <script>
+    $(function () {
+      $("#m2 > div').click(function() {
+        $("#m2 > div').removeClass('on')
+        $(this).addClass('on')
+      })
+        })
+  </script>
+</html>

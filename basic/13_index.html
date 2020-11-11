@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>attr 메서드</title>
+    <script src="/jquery-3.5.1.js"></script>
+  </head>
+  <body>
+    <div id="site">
+      <a href="http://daum.net" target="_blank">다음</a>
+      <a href="http://naver.com" target="_blank">네이버</a>
+      <a href="http://nate.com" target="_blank">네이트</a>
+    </div>
+  </body>
+
+  <script>
+    $(function () {
+      var siteName = $("#site > a:eq(0)").attr("href");
+      console.log(siteName);
+
+      $("#site > a:eq(1)")
+        .attr("href", "http://m.naver.com")
+        .text("네이버모바일");
+
+      $("#site a").attr("title", function () {
+        return "새창";
+      });
+    });
+  </script>
+</html>

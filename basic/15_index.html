@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css 메서드</title>
+    <script src="/jquery-3.5.1.js"></script>
+    <style></style>
+  </head>
+  <body>
+    <div>내용1</div>
+    <div>내용2</div>
+    <div>내용3</div>
+  </body>
+
+  <script>
+    $(function () {
+      $("div").eq(0).css({
+        padding: 10,
+        "text-align": "center",
+        background: "red",
+        color: "#fff",
+      });
+      $("div").css("width", function (index) {
+        return index * 100 + 100;
+      });
+    });
+  </script>
+</html>

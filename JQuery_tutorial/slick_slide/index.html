@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slick Slide</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="header">
+      <a href="#" class="logo">로고</a>
+      <ul class="nav">
+        <li><a href="#">홈</a></li>
+        <li><a href="#">소개</a></li>
+        <li><a href="#">서비스</a></li>
+        <li><a href="#">포트폴리오</a></li>
+        <li><a href="#">연락하기</a></li>
+      </ul>
+    </div>
+
+    <div class="slider">
+      <div class="slide">
+        <div class="item item_01"></div>
+        <div class="item item_02"></div>
+        <div class="item item_03"></div>
+      </div>
+
+      <div class="arrow">
+        <span class="prev_btn"><i class="xi-angle-left-thin"></i></span>
+        <span class="next_btn"><i class="xi-angle-right-thin"></i></span>
+      </div>
+
+      <div class="slide_text">
+        <h4>안녕하세요</h4>
+        <div class="line">
+          <i class="xi-sun-o"></i>
+        </div>
+        <p class="info">
+          싸인 현저하게 청춘의 위하여서, 청춘에서만 희망의 장식하는 것은 듣는다.
+          눈이 귀는 피가 별과 것은 긴지라 우는 때문이다.
+        </p>
+        <a href="#" class="btn">둘러보기</a>
+      </div>
+    </div>
+
+    <div class="content">
+      <h2>그들은 청춘 가치를 같은 것이다.</h2>
+      <p>
+        그들의 군영과 우리의 있는가? 길을 동력은 이상, 갑 이상은 대고,
+        황금시대다. 열락의 인생을 속에서 그리하였는가? 이는 할지라도 같이,
+        그들에게 우는 방황하여도, 철환하였는가? 얼마나 웅대한 얼마나 사막이다.
+        대한 하여도 우는 보배를 인생에 물방아 풀밭에 자신과 곳이 봄바람이다.
+        인류의 동력은 열락의 있는 대고, 너의 꽃이 없으면, 것이다.
+      </p>
+      <p>
+        오아이스도 낙원을 미인을 위하여서 위하여 우리 있는 이것이다. 원대하고,
+        주는 이 그들의 하는 귀는 낙원을 뿐이다. 되려니와, 놀이 튼튼하며,
+        만천하의 있는 교향악이다. 가치를 그들은 그들의 때문이다. 그들의 눈에
+        이성은 얼마나 것이다.보라, 목숨이 끓는 힘있다.
+      </p>
+      <p>
+        이상의 인간의 대한 바이며, 길을 평화스러운 이상 그것은 철환하였는가?
+        모래뿐일 끓는 청춘의 무엇을 끓는 우는 거친 아름답고 피다. 품으며, 이상을
+        그들은 사람은 속에 사막이다. 이성은 생생하며, 눈에 대중을 귀는 말이다.
+        이상을 웅대한 것은 천자만홍이 생명을 그들은 끓는다. 작고 그들은 때에,
+        그들은 길지 행복스럽고 몸이 것이다.
+      </p>
+      <p>
+        돋고, 설산에서 유소년에게서 찾아 뜨거운지라, 오직 굳세게 약동하다.
+        위하여서 무엇을 피는 말이다. 피어나는 웅대한 이상 타오르고 긴지라 오직
+        약동하다. 역사를 갑 듣기만 하는 더운지라 사막이다. 거선의 싸인 위하여
+        끓는 인간은 천지는 물방아 기관과 위하여서 봄바람이다.
+      </p>
+      <p>
+        위하여 피부가 풀밭에 보이는 뛰노는 끓는 인간에 돋고, 있으며, 것이다.
+        이상, 전인 청춘에서만 앞이 풍부하게 이것이다. 곳으로 그들은 소담스러운
+        칼이다. 얼음이 밝은 사는가 못할 인간은 착목한는 따뜻한 구하기 얼음과
+        부패뿐이다. 무엇을 무한한 피가 대한 튼튼하며, 갑 거선의 못하다 말이다.
+      </p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script>
+      $(".slide").slick({
+        dots: true,
+        autoplay: true,
+        speed: 600,
+        autoplaySpeed: 5000,
+        prevArrow: $(".prev_btn"),
+        nextArrow: $(".next_btn"),
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Tab</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Tab</h1>
+
+      <ul class="tab">
+        <li><a href="#" class="active">tab_1</a></li>
+        <li><a href="#">tab_2</a></li>
+        <li><a href="#">tab_3</a></li>
+        <li><a href="#">tab_4</a></li>
+      </ul>
+
+      <div class="content">
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates aperiam sint nesciunt non repellendus quisquam assumenda quis autem, asperiores cumque numquam dicta corporis est sed error in dolorem sit. Impedit.
+      </div>
+
+      <div class="content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque non incidunt debitis consequuntur expedita placeat veniam, a, quisquam cumque et architecto tempore itaque neque autem nihil natus corporis minima adipisci. Quidem molestias hic iste consequuntur ex, deserunt iure minima, quas cum voluptate officiis ea non maxime reiciendis labore nobis blanditiis.
+       </div>
+
+       <div class="content">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla veritatis, fugiat ex suscipit dolorem consequuntur commodi officia eaque quam ipsam debitis quod doloribus vero placeat ad dolores molestiae tenetur quibusdam consequatur porro? Libero quas reprehenderit, eius corrupti minus deserunt ad aut, adipisci, dolorum impedit fuga! Soluta unde enim nesciunt eaque, porro dignissimos voluptatum harum iusto fugit quas facere deserunt tempore delectus ipsam necessitatibus, quam rem perferendis! Sapiente facilis laborum ab.
+       </div>
+
+       <div class="content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi debitis mollitia et adipisci vel eaque labore eum quos alias animi ipsa nihil similique sed quas nemo in fuga maiores culpa, voluptas hic excepturi! Consectetur, ipsum. Vel, perspiciatis velit. Voluptatem eius sequi corrupti provident quisquam obcaecati facere itaque quia expedita perspiciatis nisi sapiente nesciunt excepturi cupiditate eveniet laboriosam, vero tenetur, aliquid modi placeat quibusdam repellendus accusamus. Aspernatur consequuntur, ducimus alias molestias laborum repellendus repellat velit, blanditiis doloremque quo perferendis quaerat fugiat provident totam voluptate laboriosam quibusdam pariatur. Mollitia sint ipsum autem.
+       </div>
+
+
+    <script>
+      var btn = $(".tab li");
+      var content = $(".content");
+
+      btn.eq(0).find('a').addClass("active");
+      content.hide().eq(0).show();
+
+      btn.click(function () {
+        btn.removeClass("active");
+        $(this).addClass("active");
+
+        content.hide();
+
+        var activeIndex = $(this).index();
+
+        content.eq(activeIndex).show();
+      });
+    </script>
+  </body>
+</html>

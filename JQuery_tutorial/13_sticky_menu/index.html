@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Sticky Menu</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>Sticky Menu</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit consectetur
+          expedita facere nam, culpa tempora tempore dolore incidunt ipsa dolorum? Libero hic magni,
+          atque itaque nobis minus commodi ipsum esse.
+        </p>
+
+        <nav id="nav">
+          <ul class="gnb">
+            <li>menu1</li>
+            <li>menu2</li>
+            <li>menu3</li>
+            <li>menu4</li>
+            <li>menu5</li>
+            <li>menu6</li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quos fuga magnam veritatis
+          atque impedit adipisci corrupti officiis laborum, natus dignissimos assumenda a eveniet
+          consectetur voluptate mollitia exercitationem. Ratione aliquam illo tenetur doloremque
+          dolores hic, dolor reprehenderit repudiandae recusandae, libero autem perferendis beatae
+          vel atque, placeat eius doloribus! Assumenda, ex similique! Ullam ratione tempore repellat
+          officiis hic ex cupiditate veritatis consequatur suscipit neque consectetur ipsa
+          asperiores quae, accusantium adipisci, libero quibusdam tenetur quaerat exercitationem
+          explicabo, dolorem voluptatibus. A id enim aliquid architecto explicabo corporis laborum
+          ducimus vero vel, fuga recusandae voluptates delectus itaque velit placeat doloremque?
+          Enim, voluptatum omnis. Illum temporibus incidunt quod, voluptatem vitae eaque quisquam,
+          reprehenderit earum reiciendis quaerat delectus ex sint voluptates facilis. Tenetur in,
+          vero, similique, quis esse modi adipisci ratione unde nihil aut natus? Laborum placeat
+          velit corporis temporibus, reiciendis doloremque explicabo eaque aliquid inventore
+          excepturi est eveniet expedita, qui fugiat numquam pariatur voluptatum a vero nostrum
+          maiores omnis neque tempora natus animi. Reiciendis voluptate blanditiis iste eum labore
+          suscipit nesciunt, illo fugit minus iusto aperiam, hic enim nemo commodi magnam? Mollitia,
+          eligendi aut id iusto, voluptatum ipsa expedita cum ratione eius modi ut perferendis
+          necessitatibus! Numquam, ducimus fugiat autem corporis minus animi aut hic non. Nisi, ut
+          est laborum doloribus praesentium quos enim itaque dolorem. Et minima modi, voluptatum
+          voluptatem officia distinctio, atque exercitationem, aliquid laudantium praesentium sit
+          saepe qui id aliquam provident repudiandae debitis totam dolore ut consequatur iusto
+          quaerat sapiente pariatur. Perferendis dolorem suscipit voluptate. Quos, excepturi fugit
+          facere dolore error inventore mollitia alias? Esse distinctio atque sit maxime sunt
+          incidunt facere voluptas reiciendis officia alias quisquam rerum repudiandae, nostrum
+          consequatur animi sed possimus dignissimos quaerat necessitatibus amet. Nostrum, eos. Hic
+          nesciunt atque dicta, optio doloribus consectetur rerum dolores explicabo possimus qui ad
+          officia aperiam suscipit autem culpa consequuntur laboriosam iure quam! In, beatae itaque
+          expedita dolorum maiores saepe repellat excepturi quis illo temporibus modi esse ab vitae,
+          autem sequi illum dolore ut consequuntur doloremque molestias! Officia excepturi officiis
+          illo! Quam quibusdam quasi magni dolorem aliquam vitae consequuntur ipsam est voluptas
+          neque! Quaerat explicabo possimus obcaecati libero ad deserunt nulla ratione suscipit
+          vitae qui culpa quas in minima quibusdam voluptas magnam sint, nam aliquid cum debitis
+          perferendis mollitia accusantium aspernatur. Hic cum, repellendus libero sint neque culpa
+          nostrum ducimus sit blanditiis quibusdam provident adipisci earum voluptates temporibus
+          qui commodi, exercitationem ipsa perferendis facere magnam consequatur! Dolore deserunt
+          consequuntur, et consectetur velit voluptates ullam saepe quaerat facilis quod voluptatum
+          eum modi exercitationem ex a culpa nemo vitae eius placeat suscipit neque fuga. Nihil
+          illum ipsum porro vitae dignissimos cupiditate delectus pariatur doloremque numquam
+          possimus corrupti sit doloribus minima, aliquid exercitationem veniam fugit quam! Illum
+          consequuntur qui tenetur aliquid. Nihil voluptates officia qui quis sequi ullam! Quia
+          mollitia earum non facilis suscipit, architecto consequuntur dignissimos id, praesentium
+          dolore officia voluptas, quo totam necessitatibus rerum ipsa reprehenderit explicabo.
+          Corporis minus ullam error nihil voluptatibus voluptatem eaque architecto incidunt
+          necessitatibus optio corrupti at, itaque rem aspernatur sunt suscipit magni minima
+          doloribus id perspiciatis earum! Rerum, asperiores!
+        </p>
+      </main>
+    </div>
+
+    <script>
+      var nav = $("#nav");
+      var navOffsetValue = nav.offset().top;
+
+      $(window).scroll(function () {
+        var scrollTopValue = $(document).scrollTop();
+
+        if (scrollTopValue > navOffsetValue) {
+          nav.addClass("fixed");
+        } else {
+          nav.removeClass("fixed");
+        }
+      });
+    </script>
+  </body>
+</html>
